@@ -1,0 +1,125 @@
+[
+   {
+      "model":"gpt-3.5-turbo",
+      "api_key":"YOUR-OPENAI-API-KEY",
+      "functions":[
+         {
+            "name":"approve_membership",
+            "description":"Approve membership of an address in the DAO.",
+            "parameters":{
+               "type":"object",
+               "properties":{
+                  "address":{
+                     "type":"string",
+                     "description":"The address of the member to be approved."
+                  }
+               },
+               "required":[
+                  "address"
+               ]
+            }
+         },
+         {
+            "name":"submit_proposal",
+            "description":"Submit a proposal to the DAO.",
+            "parameters":{
+               "type":"object",
+               "properties":{
+                  "proposal_id": {
+                     "type":"string",
+                     "description":"The proposal ID."
+                  },
+                  "proposal":{
+                     "type":"string",
+                     "description":"The proposal text."
+                  }
+               },
+               "required":[
+                  "proposal_id",
+                  "proposal"
+               ]
+            }
+         },
+         {
+            "name":"get_proposals",
+            "description":"Retrieve the list of proposals from the DAO.",
+            "parameters":{
+               "type":"object",
+               "properties":{}
+            }
+         },
+        {
+            "name":"get_proposal",
+            "description":"get a proposal in the DAO.",
+            "parameters":{
+               "type":"object",
+               "properties":{
+                  "proposal_id":{
+                     "type":"string",
+                     "description":"The proposal ID."
+                  }
+               },
+               "required":[
+                  "proposal_id"
+               ]
+            }
+         },
+         {
+            "name":"approve_proposal",
+            "description":"Approve a proposal in the DAO.",
+            "parameters":{
+               "type":"object",
+               "properties":{
+                  "proposal_id":{
+                     "type":"string",
+                     "description":"The proposal ID."
+                  }
+               },
+               "required":[
+                  "proposal_id"
+               ]
+            }
+         },
+         {
+            "name":"reject_proposal",
+            "description":"Reject a proposal in the DAO.",
+            "parameters":{
+               "type":"object",
+               "properties":{
+                  "proposal_id":{
+                     "type":"string",
+                     "description":"The proposal ID."
+                  }
+               },
+               "required":[
+                  "proposal_id"
+               ]
+            }
+         },
+         {
+            "name":"get_unprocessed_memberships",
+            "description":"Retrieve a string of addresses with unprocessed memberships, separated by commas.",
+            "parameters":{
+               "type":"object",
+               "properties":{}
+            }
+         },
+         {
+            "name":"get_resume_for_membership_approval",
+            "description":"Retrieve the resume which you need to analyze before approving.",
+            "parameters":{
+               "type":"object",
+               "properties":{
+                  "address":{
+                     "type":"string",
+                     "description":"The address of the member whose resume needs to be retrieved."
+                  }
+               },
+               "required":[
+                  "address"
+               ]
+            }
+         }
+      ]
+   }
+]

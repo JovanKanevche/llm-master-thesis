@@ -1,0 +1,26 @@
+# Ignore generated files
+__pycache__/
+
+# Ignore virtual environment folders
+.venv/
+env/
+
+# Ignore logs folder
+logs/
+
+# Ignore database backups folder
+backups/
+
+# Ignore test coverage reports folder
+htmlcov/
+
+# Ignore output and dist folders created during packaging
+output/
+dist/
+
+# Ignore temporary directories
+*.so
+_.*
+
+# Ignore large binary files (e.g., videos, images)
+.cache
