@@ -1,5 +1,5 @@
 # Autonomous Governance:
-# Bridging Artificial Intelligence & Blockchain in Decentralized Autonomous Organizations
+## Bridging Artificial Intelligence & Blockchain in Decentralized Autonomous Organizations
 
 This repository contains everything needed to implement our project "Autonomous Governance: Bridging Artificial Intelligence & Blockchain in Decentralized Autonomous Organizations". Our project uses Python and the AutoGen framework to integrate the power of artificial intelligence (AI) and blockchain in governance tasks within DAOs (Decentralized Autonomous Organizations). Here's what you need to get started:
 
