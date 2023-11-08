@@ -16,14 +16,14 @@ Our project comprises two primary modules integrated through the AutoGen framewo
 The proposal evaluator uses the state-of-the-art GPT-4 AI language model to assess proposals objectively based on preset parameters. This component offers considerable advantages over traditional methods since it eliminates subjectivity and provides accurate results founded upon data analysis and pattern identification.
 To launch this functionality, navigate to its directory and type:
 ```sh
-$ python proposal-evaluator.py
+$ python app/proposal-evaluator.py
 ```
 
 ## Membership Approver
 The membership approver employs smart contract technology combined with AI algorithms to handle new member requests in a safe and transparent manner. Leveraging blockchain's inherent security characteristics, this system guarantees reliable administration and monitoring of member submissions.
 To activate this function, visit its location and input:
 ```sh
-$ python membership-approver.py
+$ python app/membership-approver.py
 ```
 
 As AI and blockchain continue to progress, there are numerous opportunities to reimagine organizational procedures, particularly for DAOs. Nevertheless, it is essential to balance these advancements with fundamental principles such as transparency, impartiality, and responsibility.
